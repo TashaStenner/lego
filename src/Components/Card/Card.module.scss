@@ -1,0 +1,67 @@
+@import "../../assets/styles/variables.scss";
+
+section {
+  height: 50vh;
+  width: 90vw;
+  margin: auto;
+  border: $brick-border;
+  margin-top: 8px;
+  background-image: url(../../assets/images/yellow-background.jpg);
+  background-size: cover;
+
+  .cardInfo {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    border-bottom: $brick-border;
+
+    .setNumber {
+      width: 25%;
+      border-right: $brick-border;
+    }
+
+    .setName {
+      width: 75%;
+    }
+  }
+
+  img {
+    border: $brick-border;
+    height: 60%;
+    width: 90%;
+    margin: 16px 16px 11px 16px;
+  }
+
+  .extraInfo {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    word-wrap: wrap;
+
+    .year, .parts {
+        height: 100%;
+        width: 50%; 
+        border-top: $brick-border;
+    }
+
+    .year {
+        background-color: rgb(5, 163, 216);
+    }
+    
+    .parts {
+        background-color: orange;
+        border-left: $brick-border;
+    }
+
+    p { 
+      margin: 8px;  
+      border: $brick-border;
+      border-radius: 10px;
+      background-color: white;
+      font-size: 16px;
+      font-family: $lego-font;
+      font-style: italic;
+    }
+  }
+}

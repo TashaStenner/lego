@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 import Logo from "../../assets/images/logo.png";
+import Button from "../Button";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
           <input className={styles.input} type="text" placeholder="Search" />
         </div>
         <div className={styles.button}>
-          <p>Let's GO!</p>
+          <Button isPrimary={true} text={"Let's Go!"}/>
         </div>
       </div>
     </header>

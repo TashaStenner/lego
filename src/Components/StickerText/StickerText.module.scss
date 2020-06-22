@@ -26,11 +26,20 @@
   background-color: grey;
 }
 
+@media only screen and (min-width: 1000px) {
+  .primary,
+  .secondary {
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
 @media only screen and (min-width: 1100px) {
   .primary,
   .secondary {
     p {
-      font-size: 28px;
+      font-size: 26px;
     }
   }
 }

@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import styles from "./SearchDash.module.scss";
 import Card from "../../Components/Card";
 
@@ -16,21 +16,30 @@ const SearchDash = (props) => {
       "https://rebrickable.com/api/v3/lego/sets/7633-1?key=b3467dbaf7b933bcef61dd2d62d6dc64"
     )
       .then((result) => result.json())
-      .then((result) => (
-      setNumber(result.set_num),
-      setName(result.name),
-      setYear(result.year), 
-      setParts(result.num_parts),
-      setSetImg(result.set_img_url)
-      )   
+      .then(
+        (result) => (
+          console.log("works"),
+          setNumber(result.set_num),
+          setName(result.name),
+          setYear(result.year),
+          setParts(result.num_parts),
+          setSetImg(result.set_img_url)
+        )
       )
       .catch((err) => console.log(err));
   };
 
+  handleClick = () => getSets();
 
   return (
     <>
-      <Card setNum={number} setName={name} year={year} parts={parts} imgUrl={setImg}/>
+      <Card
+        setNum={number}
+        setName={name}
+        year={year}
+        parts={parts}
+        imgUrl={setImg}
+      />
     </>
   );
 };

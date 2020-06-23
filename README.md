@@ -13,4 +13,5 @@ extention
 1. add a authorisation
 2. personalise
 3. add a database to allow users to add to their collection 
+4. whilst the api is loading and you are being logged in play the lego shuffling sound
 

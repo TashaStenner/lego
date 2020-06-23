@@ -6,3 +6,11 @@ To do:
 5. create a dashboard with general facts and figures
 6. create minifigures for the corners
 7. host
+
+
+extention
+
+1. add a authorisation
+2. personalise
+3. add a database to allow users to add to their collection 
+

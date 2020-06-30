@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Navbar.module.scss";
 import Logo from "../../assets/images/logo.png";
 import Button from "../Button";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {handleClick} = props;
+
+  const [searchData, setSearchData] = useState("6869");
+
   return (
     <header>
       <div className={styles.title}>
@@ -12,10 +16,10 @@ const Navbar = () => {
       </div>
       <div className={styles.searchSection}>
         <div className={styles.brick}>
-          <input className={styles.input} type="text" placeholder="Search" />
+          <input className={styles.input} type="text" placeholder="Search" onSubmit={(e) => setSearchData(e.target.value)}/>
         </div>
         <div className={styles.button}>
-          <Button isPrimary={true} text={"Let's Go!"}/>
+          <Button isPrimary={true} text={"Let's Go!"} onClick={() => handleClick(searchData)}/>
         </div>
       </div>
     </header>

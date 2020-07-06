@@ -10,4 +10,16 @@
   background-size: cover;
 }
 
+.info {
+  .data {
+    position: relative;
+    height: 100%;
+    width: 100%;
 
+    .referenceLink {
+      font-size: 10px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

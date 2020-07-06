@@ -7,15 +7,16 @@
 
   .infomationBox {
     height: 50%;
-    width: 30%;
+    width: 90%;
     position: absolute;
-    right: 0;
-    margin: 8px;
+    right: 15px;
+    top: 6px;
+    margin: 0 auto;
   }
 
   .minifigs {
     height: 40%;
-    width: 30%;
+    width: 100%;
     background-image: url("../../assets/images/minifigures.jpg");
     background-position: top;
     background-size: contain;
@@ -27,46 +28,32 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .card {
-    width: 44%;
-    margin: 24px;
-
-    .extraInfo {
-      height: 15.2%;
-    }
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .card {
-    margin-top: 32px;
-
-    .cardInfo {
-      height: 15%;
+  .welcome {
+    .infomationBox {
+      height: 50%;
+      width: 40%;
+      margin: 8px;
+      right: 0;
     }
 
-    img {
-      width: 92%;
-      margin-left: 20px;
-    }
-
-    .extraInfo {
-      margin-top: 4px;
-
-      p {
-        font-size: 24px;
-      }
+    .minifigs {
+      height: 40%;
+      width: 40%;
+      bottom: -8vh;
+      right: 0;
     }
   }
 }
 
 @media only screen and (min-width: 1100px) {
-  .card {
-    width: 33%;
-    height: 55%;
+  .welcome {
+    .infomationBox {
+      width: 30%;
+    }
 
-    .extraInfo {
-      margin-top: 3px;
+    .minifigs {
+      width: 30%;
+      bottom: -6vh;
     }
   }
 }

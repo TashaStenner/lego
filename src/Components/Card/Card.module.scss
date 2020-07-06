@@ -1,6 +1,6 @@
 @import "../../assets/styles/variables.scss";
 
-section {
+.card {
   height: 50%;
   width: 90%;
   margin: auto;
@@ -68,7 +68,7 @@ section {
 }
 
 @media only screen and (min-width: 768px) {
-  section {
+  .card {
     width: 44%;
     margin: 24px;
 
@@ -79,7 +79,7 @@ section {
 }
 
 @media only screen and (min-width: 1000px) {
-  section {
+  .card {
     margin-top: 32px;
 
     .cardInfo {
@@ -102,7 +102,7 @@ section {
 }
 
 @media only screen and (min-width: 1100px) {
-  section {
+  .card {
     width: 33%;
     height: 55%;
 

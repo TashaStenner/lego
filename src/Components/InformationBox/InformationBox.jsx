@@ -4,7 +4,12 @@ import styles from "./InformationBox.module.scss";
 const InformationBox = () => {
   return (
     <>
-      <p>InformationBox works</p>
+      <section className={styles.info}>
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+      </section>
     </>
   );
 };

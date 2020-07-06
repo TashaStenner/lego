@@ -6,7 +6,7 @@ const Card = (props) => {
   const { setNum, setName, year, parts, imgUrl } = props;
   return (
     <>
-      <section>
+      <section className={styles.card}>
         <div className={styles.cardInfo}>
           <div className={styles.setNumber}>
             <StickerText isPrimary={true} text={setNum} />

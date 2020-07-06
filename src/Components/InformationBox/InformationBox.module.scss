@@ -1,0 +1,13 @@
+@import "../../assets/styles/variables.scss";
+
+.info {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  border: $brick-border;
+  margin-top: 8px;
+  background-image: url(../../assets/images/yellow-background.jpg);
+  background-size: cover;
+}
+
+

@@ -4,9 +4,12 @@ import InformationBox from "../../Components/InformationBox";
 
 const WelcomeDash = () => {
   return (
-    <>
+    <section className={styles.welcome}>
+      <div className={styles.infomationBox}>
       <InformationBox />
-    </>
+      </div>
+      <div className={styles.minifigs}></div>
+    </section>
   );
 };
 
